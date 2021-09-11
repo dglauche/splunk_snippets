@@ -15,6 +15,9 @@ Probably. I have tested it just for my use case.
 ## Screenshots
 ![pre](./resize_panels_pre.png)
 
+## Examples
+Take a look at `remove_unused_legends_post.xml` it's included there
+
 # remove_unused_legends.js
 ## Why did I build it?
 When you're using a trellis chart (I tested it with column charts) each series will be included in every legend no matter if the series is included into the chart. This could lead to huge numbers of useless legends which can be removed to keep your dashboard nice & clean.
@@ -32,3 +35,6 @@ It might take a while to loop through all the elements. Beside that im quite con
 ## Screenshots
 ![pre](./remove_unused_legends_pre.png)
 ![post](./remove_unused_legends_post.png)
+
+## Examples
+`remove_unused_legends_pre.xml` & `remove_unused_legends_post.xml`
