@@ -33,7 +33,12 @@ It might take a while to loop through all the elements. Beside that im quite con
 2. Include the term `remove_unused_legends` into the searches you would like to trigger a new clean up.
 
 ## Screenshots
+without `remove_unused_legends.js`: 
+
 ![pre](./remove_unused_legends_pre.png)
+
+with `remove_unused_legends.js`: 
+
 ![post](./remove_unused_legends_post.png)
 
 ## Examples
