@@ -68,5 +68,9 @@ function remove_unused_legends(){
 
         });
     });
+
+    $('div.pagination a.btn-square, div.pagination a.page-controls').click(function(){
+        setTimeout(remove_unused_legends, 1000);
+    });
 }
 
