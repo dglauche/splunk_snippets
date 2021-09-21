@@ -58,9 +58,14 @@ function resizePanel(){
     // around with the DOM
     $(".dashboard-panel .splunk-view").each(function(idx, view){
 
+        // If there is just one viz-panel there is no need resize something
+        view = $(view);
+        if (view.find('.viz-panel').length <= 1) {
+            return;
+        }
+
         // If we find a centered splunk message we assume that it's the "No data found message"
         // I found no better way to keep it language independant
-        view = $(view);
         splunk_messages = view.find('div.splunk-message-container').not('.compact')
         if (splunk_messages.length == 1 && splunk_messages.css('justify-content') == 'center'){
             console.log('resizing to empty panel!');
